@@ -1,0 +1,19 @@
+# 本地源文件（已提取到 assets，无需部署）
+网站内容.pptx
+简历-梁曦-同济大学-AI产品.pdf
+网页内容主框架.png
+配色参考Midcircle 医疗社区 APP.png
+网页生成prompt.md
+
+# 提取过程中的冗余图片（正式资源在 assets/midcircle/ 等目录）
+assets/midcircle-*.jpeg
+assets/midcircle-*.png
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+node_modules/
+pptx_extract/
+temp_ppt.zip

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>梁曦 · AI 产品经理作品集</title>
+  <meta name="description" content="梁曦 — 同济大学建筑学背景，AI 产品经理。擅长 Multi-Agent、RAG 知识库、Workflow 编排与数据驱动产品落地。">
+  <meta name="keywords" content="AI产品经理,梁曦,作品集,Multi-Agent,RAG,Prompt Engineering">
+  <meta property="og:title" content="梁曦 · AI 产品经理作品集">
+  <meta property="og:description" content="从空间设计思维跨界 AI 产品，用 Agent 与 Workflow 解决真实业务问题。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "梁曦",
+    "jobTitle": "AI 产品经理",
+    "email": "1469873177@qq.com",
+    "telephone": "+86-18081456826",
+    "address": { "@type": "PostalAddress", "addressLocality": "上海", "addressRegion": "杨浦区" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "同济大学" },
+    "knowsAbout": ["AI Product Management", "Multi-Agent", "RAG", "Prompt Engineering", "Workflow"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" data-nav="hero">Liang Xi</a>
+      <div class="nav__links">
+        <a href="#hero" class="nav__link" data-nav="hero">个人介绍</a>
+        <a href="#experience" class="nav__link" data-nav="experience">实习经历</a>
+        <a href="#midcircle" class="nav__link" data-nav="midcircle">创意作品</a>
+        <a href="#contact" class="nav__link" data-nav="contact">联系方式</a>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" aria-label="切换暗色模式">🌙</button>
+        <button class="nav__burger" aria-label="菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-view">
+
+  <!-- Section 1: Hero -->
+  <section id="hero" class="page-panel active hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title animate-in">Hi, I'm 梁曦</h1>
+          <p class="hero__subtitle animate-in">AI 产品 × 建筑学背景</p>
+          <p class="hero__bio animate-in">
+            同济大学建筑与城市规划学院 28 届，建筑学城市设计方向。本科重庆大学，曾获国家奖学金、重庆市优秀毕业生等。从空间设计思维跨界 AI 产品，擅长将复杂系统抽象为清晰的产品架构，用 Agent 与 Workflow 解决真实业务问题。
+          </p>
+          <div class="hero__cta animate-in">
+            <a href="resume.pdf" class="btn btn--primary" download>下载简历</a>
+            <a href="#experience" class="btn btn--secondary" data-nav="experience">查看项目</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__avatar-wrap">
+            <img src="assets/profile.jpg" alt="梁曦个人照片" class="hero__avatar" width="320" height="380" loading="eager">
+            <div class="hero__avatar-deco"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: 实习经历 -->
+  <section id="experience" class="page-panel section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section__label">Experience</p>
+        <h2 class="section__title">实习经历</h2>
+        <p class="section__desc">两段 AI 产品实习，积累 Agent 落地与数据产品全链路经验。</p>
+      </div>
+      <div class="experience__grid reveal-stagger">
+
+        <!-- 美团 -->
+        <a href="project-meituan.html" class="exp-card">
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__company">美团</h3>
+              <p class="exp-card__role">产品（AI）实习生</p>
+            </div>
+            <span class="exp-card__date">2026.04 – 2026.07</span>
+          </div>
+          <ul class="exp-card__list">
+            <li>在指导下单独负责需求承接，产品设计、完成评审、移交与上线，主要负责 B 端、S 端</li>
+            <li>参与 PDC 流程建设和审核工具优化，建设 PDC【AI 友好】平台与自助查询助手、商家入驻助手</li>
+            <li>跨部门与治理产品、CRM 产品、后端、测试等协作推进</li>
+          </ul>
+          <div class="exp-card__footer">
+            <div class="exp-card__tags">
+              <span class="badge">Multi-Agent</span>
+              <span class="badge">RAG</span>
+              <span class="badge">B端产品</span>
+            </div>
+            <span class="exp-card__cta">点击查看详情 <span class="exp-card__arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- 脉策科技 -->
+        <a href="project-maice.html" class="exp-card">
+          <div class="exp-card__header">
+            <div>
+              <h3 class="exp-card__company">脉策科技</h3>
+              <p class="exp-card__role">AI 数据产品实习生</p>
+            </div>
+            <span class="exp-card__date">2026.01 – 2026.04</span>
+          </div>
+          <ul class="exp-card__list">
+            <li>使用 MySQL 进行数据统计分析；Figma、PS 完成界面 UI 设计；剪辑工具完成演示视频</li>
+            <li>基于 Cursor / Claude 进行数据爬取、清洗与页面搭建（如工单数据系统）</li>
+            <li>使用 DATALAS 平台跟踪核心场景数据，搭建大屏看板；参与 AI 智能体搭建与 Prompt 调试</li>
+          </ul>
+          <div class="exp-card__footer">
+            <div class="exp-card__tags">
+              <span class="badge">智能体</span>
+              <span class="badge">BI 看板</span>
+              <span class="badge">G端政务</span>
+            </div>
+            <span class="exp-card__cta">点击查看详情 <span class="exp-card__arrow">→</span></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Midcircle 创意作品 -->
+  <section id="midcircle" class="page-panel section">
+    <div class="container">
+      <div class="midcircle__header reveal">
+        <div>
+          <p class="section__label">Creative Work</p>
+          <h2 class="section__title">Midcircle 医疗社区</h2>
+          <p class="section__desc" style="margin-bottom:0">
+            症状讨论 + 医疗信息辅助决策社区。链接普通用户、医学生与执业医生，AI 辅助提升效率。
+          </p>
+        </div>
+        <div class="midcircle__aside">
+          <div class="midcircle__links">
+            <a href="https://www.medcircle-ai.top" target="_blank" rel="noopener" class="btn btn--primary btn--sm">访问网站</a>
+            <a href="https://medcircle-ai.vercel.app" target="_blank" rel="noopener" class="btn btn--secondary btn--sm">Vercel 部署</a>
+          </div>
+          <p class="midcircle__note">数据库迁移，原数据暂未转移因此内部帖子仅为演示</p>
+        </div>
+      </div>
+
+      <!-- 功能模块 -->
+      <div class="feature-grid reveal-stagger">
+        <div class="feature-card">
+          <p class="feature-card__num">01</p>
+          <h3 class="feature-card__title">寻医问道</h3>
+          <p class="feature-card__desc">核心发帖交流区，引导式半结构化发帖，AI 症状信息结构化提取、就医风险分级、科室推荐。回帖按可信度权重排序（医生 1.0 &gt; 高年级医学生 0.7 &gt; 低年级 0.4 &gt; 普通用户 0.2）。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-card__num">02</p>
+          <h3 class="feature-card__title">健康真相</h3>
+          <p class="feature-card__desc">高价值医疗科普内容沉淀区，权威核验与溯源，帮助用户获取可信赖的健康知识（二期规划）。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-card__num">03</p>
+          <h3 class="feature-card__title">专业区（Pro）</h3>
+          <p class="feature-card__desc">仅对认证医生/医学生开放，分话题圈子运营（执业医考题、病例探讨、临床指南），支持同行内匿名。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-card__num">04</p>
+          <h3 class="feature-card__title">我的</h3>
+          <p class="feature-card__desc">个人账号与信息统一管理，身份切换与内容管理，二期规划"我的健康档案"。</p>
+        </div>
+      </div>
+
+      <!-- 页面演示 -->
+      <div class="page-demo reveal">
+        <h3 class="page-demo__title">页面演示</h3>
+        <div class="page-demo__card">
+          <div class="screenshot-carousel" data-carousel>
+        <button class="screenshot-carousel__btn screenshot-carousel__btn--prev" type="button" aria-label="上一组">‹</button>
+
+        <div class="screenshot-carousel__viewport">
+          <div class="screenshot-carousel__track">
+            <div class="screenshot-carousel__slide">
+              <div class="screenshot-item">
+                <img src="assets/midcircle/01-launch.jpg" alt="启动页" loading="lazy">
+                <p class="screenshot-item__label">启动页</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/02-login.jpg" alt="登录" loading="lazy">
+                <p class="screenshot-item__label">登录</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/03-identity.jpg" alt="选择身份" loading="lazy">
+                <p class="screenshot-item__label">选择身份</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/04-community.jpg" alt="寻医问道" loading="lazy">
+                <p class="screenshot-item__label">寻医问道</p>
+              </div>
+            </div>
+            <div class="screenshot-carousel__slide">
+              <div class="screenshot-item">
+                <img src="assets/midcircle/05-create-post.jpg" alt="发布问诊帖" loading="lazy">
+                <p class="screenshot-item__label">发布问诊帖</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/06-post-detail.jpg" alt="帖子详情" loading="lazy">
+                <p class="screenshot-item__label">帖子详情</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/07-ai-summary.jpg" alt="AI 汇总" loading="lazy">
+                <p class="screenshot-item__label">AI 汇总</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/08-health-truth.jpg" alt="健康真相" loading="lazy">
+                <p class="screenshot-item__label">健康真相</p>
+              </div>
+            </div>
+            <div class="screenshot-carousel__slide">
+              <div class="screenshot-item">
+                <img src="assets/midcircle/09-pro-zone.jpg" alt="专业区 Pro" loading="lazy">
+                <p class="screenshot-item__label">专业区 Pro</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/10-profile.jpg" alt="我的" loading="lazy">
+                <p class="screenshot-item__label">我的</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/11-my-posts.jpg" alt="我的帖子" loading="lazy">
+                <p class="screenshot-item__label">我的帖子</p>
+              </div>
+              <div class="screenshot-item">
+                <img src="assets/midcircle/12-article.jpg" alt="文章详情" loading="lazy">
+                <p class="screenshot-item__label">文章详情</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="screenshot-carousel__btn screenshot-carousel__btn--next" type="button" aria-label="下一组">›</button>
+
+        <div class="screenshot-carousel__dots" role="tablist" aria-label="截图分页">
+          <button class="screenshot-carousel__dot active" type="button" data-slide="0" aria-label="第 1 组" aria-selected="true"></button>
+          <button class="screenshot-carousel__dot" type="button" data-slide="1" aria-label="第 2 组" aria-selected="false"></button>
+          <button class="screenshot-carousel__dot" type="button" data-slide="2" aria-label="第 3 组" aria-selected="false"></button>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- 技术架构 -->
+      <div class="tech-stack reveal">
+        <div class="tech-stack__item"><span class="tech-stack__dot"></span>GitHub + Vercel 前端部署</div>
+        <div class="tech-stack__item"><span class="tech-stack__dot"></span>Render · NestJS API</div>
+        <div class="tech-stack__item"><span class="tech-stack__dot"></span>PostgreSQL 数据库</div>
+        <div class="tech-stack__item"><span class="tech-stack__dot"></span>蚂蚁百灵 AI</div>
+        <div class="tech-stack__item"><span class="tech-stack__dot"></span>个人独立作品 · 初版已上线</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: 联系方式 -->
+  <section id="contact" class="page-panel section contact">
+    <div class="container reveal">
+      <div class="contact__card">
+        <h2 class="contact__title">联系我</h2>
+        <p class="contact__subtitle">正在寻找 AI 产品实习机会，欢迎联系交流。</p>
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__item-label">邮箱</span>
+            <span class="contact__item-value"><a href="mailto:1469873177@qq.com">1469873177@qq.com</a></span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__item-label">电话</span>
+            <span class="contact__item-value"><a href="tel:18081456826">18081456826</a></span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__item-label">位置</span>
+            <span class="contact__item-value">上海 · 杨浦区</span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__item-label">基本信息</span>
+            <span class="contact__item-value">2002.12.21 · 女 · 23 岁</span>
+          </div>
+        </div>
+        <a href="resume.pdf" class="btn btn--primary" download>下载完整简历</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 梁曦 · AI 产品经理作品集</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-label="图片预览">
+    <button class="lightbox__close" aria-label="关闭">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

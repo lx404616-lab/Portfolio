@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美团 · 产品（AI）实习 — 梁曦作品集</title>
+  <meta name="description" content="美团 PDC 自助查询助手 Multi-Agent 工作流、商家入驻助手 Agent 优化项目详情。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Liang Xi</a>
+      <div class="nav__links">
+        <a href="index.html#hero" class="nav__link">个人介绍</a>
+        <a href="index.html#experience" class="nav__link">实习经历</a>
+        <a href="index.html#midcircle" class="nav__link">创意作品</a>
+        <a href="index.html#contact" class="nav__link">联系方式</a>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" aria-label="切换暗色模式">🌙</button>
+        <button class="nav__burger" aria-label="菜单"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="container">
+      <a href="index.html#experience" class="project-hero__back">← 返回实习经历</a>
+      <h1 class="project-hero__title">美团 · 产品（AI）实习生</h1>
+      <p class="project-hero__meta">2026.04 – 2026.07</p>
+      <div class="project-hero__tags">
+        <span class="badge">B端 / S端产品</span>
+        <span class="badge">Multi-Agent</span>
+        <span class="badge">RAG 知识库</span>
+        <span class="badge">Prompt 调试</span>
+        <span class="badge">AB Test</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:0">
+    <div class="container">
+
+      <!-- 项目 A -->
+      <article class="project-block reveal">
+        <h2 class="project-block__title">PDC 自助查询助手 <span>项目 A</span></h2>
+
+        <div class="project-block__section">
+          <p class="project-block__label">背景</p>
+          <p class="project-block__text">PDC 负责本地核心商业的 POI 基建，有大量平台审核产线和子平台，异常排查与日志查询过程高度复杂，口径混乱。</p>
+        </div>
+
+        <div class="project-block__section">
+          <p class="project-block__label">方案</p>
+          <p class="project-block__text">建设 PDC 自助查询助手，采取 <strong>Multi-Agent 工作流</strong>编排框架，包含日志查询、POI 取数、情报查询 3 个子 Agent，挂载 10+ Skill，涵盖 20+ 核心表及 1.4 万+ 数据表。</p>
+        </div>
+
+        <div class="project-block__section">
+          <p class="project-block__label">成果</p>
+          <p class="project-block__text">推动 AI 实现"查询-自识别-分析"闭环，异常排查取数耗时从两三天缩减至 <span class="stat" data-count="5分钟">5 分钟</span>内。</p>
+        </div>
+
+        <div class="project-block__metrics">
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="120+">0</div>
+            <div class="metric-card__label">日均调用量</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="84%">0</div>
+            <div class="metric-card__label">召回率</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="96%">0</div>
+            <div class="metric-card__label">准确率</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="5分钟">0</div>
+            <div class="metric-card__label">排查耗时</div>
+          </div>
+        </div>
+
+        <div class="project-block__section" style="margin-top:32px">
+          <p class="project-block__label">个人贡献</p>
+          <div class="contribution-list">
+            <span class="badge">需求分析</span>
+            <span class="badge">Agent 设计</span>
+            <span class="badge">网页搭建</span>
+            <span class="badge">知识库建设</span>
+            <span class="badge">数据标注</span>
+            <span class="badge">Skill 开发</span>
+            <span class="badge">Prompt 调试</span>
+            <span class="badge">评测迭代</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 B -->
+      <article class="project-block reveal">
+        <h2 class="project-block__title">商家入驻助手 <span>项目 B</span></h2>
+
+        <div class="project-block__section">
+          <p class="project-block__label">背景</p>
+          <p class="project-block__text">自入驻商家在门店信息填写到入驻成功过程中流失严重，正向流程自主操作意愿不强，异常问题是两大流失原因。</p>
+        </div>
+
+        <div class="project-block__section">
+          <p class="project-block__label">方案</p>
+          <p class="project-block__text">建设"入驻专家"Agent 二期优化。一方面通过对话收集入驻材料，替代商家完成标准化提交；另一方面帮助用户解决入驻异常，自主工具调用判断材料问题并给出修改指示或直接辅助更新。</p>
+        </div>
+
+        <div class="project-block__section">
+          <p class="project-block__label">成果 · AB 实验</p>
+          <p class="project-block__text">二期灰度 5% 与一期 AB 实验，核心指标全面提升：</p>
+        </div>
+
+        <div class="project-block__metrics">
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="350%">0</div>
+            <div class="metric-card__label">CTR 提升</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="42%">0</div>
+            <div class="metric-card__label">互动率提升</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="48%">0</div>
+            <div class="metric-card__label">转化率提升</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card__value" data-count="9.5倍">0</div>
+            <div class="metric-card__label">产出效率</div>
+          </div>
+        </div>
+
+        <div class="project-block__section" style="margin-top:32px">
+          <p class="project-block__label">个人贡献</p>
+          <div class="contribution-list">
+            <span class="badge">需求分析</span>
+            <span class="badge">Agent 设计</span>
+            <span class="badge">知识库建设</span>
+            <span class="badge">流程编排</span>
+            <span class="badge">AB 实验</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 其他需求 -->
+      <div class="other-projects reveal">
+        <h3 class="other-projects__title">其他需求</h3>
+        <ul>
+          <li>某品牌建店入口增加前置抽检，拦截虚假建店</li>
+          <li>品牌新增自动挂接品店关系</li>
+          <li>某品牌建店入口批量新增门店信息拦截反馈信息补充</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>© 2026 梁曦 · AI 产品经理作品集</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
