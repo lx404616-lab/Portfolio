@@ -10,10 +10,10 @@
   <meta property="og:description" content="从空间设计思维跨界 AI 产品，用 Agent 与 Workflow 解决真实业务问题。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/profile.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="image" href="assets/profile.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260709">
+  <link rel="stylesheet" href="css/style.css?v=20260710">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,7 +70,7 @@
         </div>
         <div class="hero__visual">
           <div class="hero__avatar-wrap">
-            <img src="assets/profile.jpg" alt="梁曦个人照片" class="hero__avatar" width="320" height="380" loading="eager">
+            <img src="assets/profile.jpg" alt="梁曦个人照片" class="hero__avatar" width="320" height="380" loading="eager" fetchpriority="high" decoding="async">
             <div class="hero__avatar-deco"></div>
           </div>
         </div>
@@ -184,7 +184,7 @@
           </div>
         </div>
         <div class="midcircle__banner">
-          <img src="启动页.png" alt="Midcircle 启动页" loading="lazy">
+          <img src="启动页.webp" alt="Midcircle 启动页" loading="lazy" decoding="async">
         </div>
       </div>
 
@@ -224,55 +224,55 @@
           <div class="screenshot-carousel__track">
             <div class="screenshot-carousel__slide">
               <div class="screenshot-item">
-                <img src="assets/midcircle/01-launch.jpg" alt="启动页" loading="lazy">
+                <img data-src="assets/midcircle/01-launch.jpg" alt="启动页" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">启动页</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/02-login.jpg" alt="登录" loading="lazy">
+                <img data-src="assets/midcircle/02-login.jpg" alt="登录" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">登录</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/03-identity.jpg" alt="选择身份" loading="lazy">
+                <img data-src="assets/midcircle/03-identity.jpg" alt="选择身份" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">选择身份</p>
               </div>
               <div class="screenshot-item">
-                <img src="02fe6b6dd03c6137c53c101c5f5b198f.jpg" alt="寻医问道" loading="lazy">
+                <img data-src="02fe6b6dd03c6137c53c101c5f5b198f.jpg" alt="寻医问道" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">寻医问道</p>
               </div>
             </div>
             <div class="screenshot-carousel__slide">
               <div class="screenshot-item">
-                <img src="assets/midcircle/05-create-post.jpg" alt="发布问诊帖" loading="lazy">
+                <img data-src="assets/midcircle/05-create-post.jpg" alt="发布问诊帖" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">发布问诊帖</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/06-post-detail.jpg" alt="帖子详情" loading="lazy">
+                <img data-src="assets/midcircle/06-post-detail.jpg" alt="帖子详情" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">帖子详情</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/07-ai-summary.jpg" alt="AI 汇总" loading="lazy">
+                <img data-src="assets/midcircle/07-ai-summary.jpg" alt="AI 汇总" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">AI 汇总</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/08-health-truth.jpg" alt="健康真相" loading="lazy">
+                <img data-src="assets/midcircle/08-health-truth.jpg" alt="健康真相" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">健康真相</p>
               </div>
             </div>
             <div class="screenshot-carousel__slide">
               <div class="screenshot-item">
-                <img src="assets/midcircle/09-pro-zone.jpg" alt="专业区 Pro" loading="lazy">
+                <img data-src="assets/midcircle/09-pro-zone.jpg" alt="专业区 Pro" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">专业区 Pro</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/10-profile.jpg" alt="我的" loading="lazy">
+                <img data-src="assets/midcircle/10-profile.jpg" alt="我的" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">我的</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/11-my-posts.jpg" alt="我的帖子" loading="lazy">
+                <img data-src="assets/midcircle/11-my-posts.jpg" alt="我的帖子" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">我的帖子</p>
               </div>
               <div class="screenshot-item">
-                <img src="assets/midcircle/12-article.jpg" alt="文章详情" loading="lazy">
+                <img data-src="assets/midcircle/12-article.jpg" alt="文章详情" loading="lazy" decoding="async">
                 <p class="screenshot-item__label">文章详情</p>
               </div>
             </div>
@@ -344,6 +344,6 @@
     <img src="" alt="">
   </div>
 
-  <script src="js/main.js?v=20260709"></script>
+  <script src="js/main.js?v=20260710"></script>
 </body>
 </html>
