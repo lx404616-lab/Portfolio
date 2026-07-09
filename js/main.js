@@ -134,8 +134,9 @@
   const counterObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
           animateCounter(entry.target);
+          entry.target.dataset.animated = 'true';
           counterObserver.unobserve(entry.target);
         }
       });
@@ -205,6 +206,107 @@
         dot.classList.toggle('active', i === current);
         dot.setAttribute('aria-selected', i === current ? 'true' : 'false');
       });
+    }
+
+    prevBtn?.addEventListener('click', () => goTo(current - 1));
+    nextBtn?.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => goTo(Number(dot.dataset.slide)));
+    });
+
+    goTo(0);
+  });
+
+  /* ---- Project detail tabs ---- */
+  document.querySelectorAll('[data-project-detail]').forEach((detail) => {
+    const tabBtns = detail.querySelectorAll('.project-tabs__btn');
+    const panels = detail.querySelectorAll('.project-tabs__panel');
+    const gallery = detail.querySelector('[data-project-gallery]');
+    const galleryTab = gallery?.dataset.galleryTab || 'pdc';
+    const showcase = detail.querySelector('[data-showcase-tab]');
+    const showcaseTab = showcase?.dataset.showcaseTab || 'pdc';
+
+    function animatePanelCounters(panel) {
+      panel.querySelectorAll('[data-count]').forEach((el) => {
+        if (el.dataset.animated) return;
+        animateCounter(el);
+        el.dataset.animated = 'true';
+      });
+    }
+
+    function syncGalleryHeight() {
+      detail.querySelectorAll('.project-gallery-slot').forEach((slot) => {
+        slot.style.height = '';
+      });
+
+      if (window.innerWidth <= 991) return;
+
+      const panel = detail.querySelector('.project-tabs__panel.active');
+      const body = panel?.querySelector('.project-panel__body');
+      const slot = panel?.querySelector('.project-gallery-slot');
+      if (body && slot) {
+        slot.style.height = `${body.offsetHeight}px`;
+      }
+    }
+
+    function switchTab(tabId) {
+      tabBtns.forEach((btn) => {
+        const isActive = btn.dataset.tab === tabId;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach((panel) => {
+        const isActive = panel.dataset.tabPanel === tabId;
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
+        if (isActive) animatePanelCounters(panel);
+      });
+
+      if (gallery) {
+        const showGallery = tabId === galleryTab;
+        gallery.classList.toggle('is-hidden', !showGallery);
+      }
+
+      if (showcase) {
+        const showShowcase = tabId === showcaseTab;
+        showcase.classList.toggle('is-hidden', !showShowcase);
+      }
+
+      requestAnimationFrame(syncGalleryHeight);
+    }
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+    });
+
+    const initial = detail.querySelector('.project-tabs__btn.active')?.dataset.tab || 'pdc';
+    switchTab(initial);
+
+    window.addEventListener('resize', syncGalleryHeight);
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(syncGalleryHeight);
+    }
+  });
+
+  /* ---- Project detail image gallery ---- */
+  document.querySelectorAll('[data-project-gallery]').forEach((gallery) => {
+    const track = gallery.querySelector('.project-gallery__track');
+    const slides = gallery.querySelectorAll('.project-gallery__slide');
+    const dots = gallery.querySelectorAll('.project-gallery__dot');
+    const prevBtn = gallery.querySelector('.project-gallery__btn--prev');
+    const nextBtn = gallery.querySelector('.project-gallery__btn--next');
+    let current = 0;
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === current);
+        dot.setAttribute('aria-selected', i === current ? 'true' : 'false');
+      });
+      if (prevBtn) prevBtn.disabled = current === 0;
+      if (nextBtn) nextBtn.disabled = current === slides.length - 1;
     }
 
     prevBtn?.addEventListener('click', () => goTo(current - 1));

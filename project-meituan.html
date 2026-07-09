@@ -43,121 +43,184 @@
     </div>
   </header>
 
-  <main class="section" style="padding-top:0">
+  <main class="section section--project">
     <div class="container">
 
-      <!-- 项目 A -->
-      <article class="project-block reveal">
-        <h2 class="project-block__title">PDC 自助查询助手 <span>项目 A</span></h2>
+      <article class="project-detail reveal" data-project-detail>
+        <div class="project-block__layout">
 
-        <div class="project-block__section">
-          <p class="project-block__label">背景</p>
-          <p class="project-block__text">PDC 负责本地核心商业的 POI 基建，有大量平台审核产线和子平台，异常排查与日志查询过程高度复杂，口径混乱。</p>
-        </div>
+          <div class="project-detail__body">
+            <nav class="project-tabs" role="tablist" aria-label="美团项目切换">
+              <button class="project-tabs__btn active" type="button" role="tab" data-tab="pdc" aria-selected="true" aria-controls="panel-pdc">PDC 自助查询助手</button>
+              <button class="project-tabs__btn" type="button" role="tab" data-tab="merchant" aria-selected="false" aria-controls="panel-merchant">商家入驻助手</button>
+              <button class="project-tabs__btn" type="button" role="tab" data-tab="other" aria-selected="false" aria-controls="panel-other">其他需求</button>
+            </nav>
 
-        <div class="project-block__section">
-          <p class="project-block__label">方案</p>
-          <p class="project-block__text">建设 PDC 自助查询助手，采取 <strong>Multi-Agent 工作流</strong>编排框架，包含日志查询、POI 取数、情报查询 3 个子 Agent，挂载 10+ Skill，涵盖 20+ 核心表及 1.4 万+ 数据表。</p>
-        </div>
+            <div class="project-tabs__panels">
 
-        <div class="project-block__section">
-          <p class="project-block__label">成果</p>
-          <p class="project-block__text">推动 AI 实现"查询-自识别-分析"闭环，异常排查取数耗时从两三天缩减至 <span class="stat" data-count="5分钟">5 分钟</span>内。</p>
-        </div>
+              <!-- PDC 自助查询助手 -->
+              <div class="project-tabs__panel active" id="panel-pdc" role="tabpanel" data-tab-panel="pdc">
+                <h2 class="project-block__title">PDC 自助查询助手 <span>项目 A</span></h2>
+                <div class="project-detail__split">
+                  <div class="project-panel__body">
+                <div class="project-block__section">
+                  <p class="project-block__label">背景</p>
+                  <p class="project-block__text">PDC 负责本地核心商业的 POI 基建，有大量平台审核产线和子平台，异常排查与日志查询过程高度复杂，口径混乱。</p>
+                </div>
+                <div class="project-block__section">
+                  <p class="project-block__label">方案</p>
+                  <p class="project-block__text">建设 PDC 自助查询助手，采取 <strong>Multi-Agent 工作流</strong>编排框架，包含日志查询、POI 取数、情报查询 3 个子 Agent，挂载 10+ Skill，涵盖 20+ 核心表及 1.4 万+ 数据表。</p>
+                </div>
+                <div class="project-block__section">
+                  <p class="project-block__label">成果</p>
+                  <p class="project-block__text">推动 AI 实现"查询-自识别-分析"闭环，异常排查取数耗时从两三天缩减至 <span class="stat" data-count="5分钟">5 分钟</span>内。</p>
+                </div>
+                <div class="project-block__metrics">
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="120+">0</div>
+                    <div class="metric-card__label">日均调用量</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="84%">0</div>
+                    <div class="metric-card__label">召回率</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="96%">0</div>
+                    <div class="metric-card__label">准确率</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="5分钟">0</div>
+                    <div class="metric-card__label">排查耗时</div>
+                  </div>
+                </div>
+                <div class="project-block__section" style="margin-top:32px">
+                  <p class="project-block__label">个人贡献</p>
+                  <div class="contribution-list">
+                    <span class="badge">需求分析</span>
+                    <span class="badge">Agent 设计</span>
+                    <span class="badge">网页搭建</span>
+                    <span class="badge">知识库建设</span>
+                    <span class="badge">数据标注</span>
+                    <span class="badge">Skill 开发</span>
+                    <span class="badge">Prompt 调试</span>
+                    <span class="badge">评测迭代</span>
+                  </div>
+                </div>
+                  </div>
 
-        <div class="project-block__metrics">
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="120+">0</div>
-            <div class="metric-card__label">日均调用量</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="84%">0</div>
-            <div class="metric-card__label">召回率</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="96%">0</div>
-            <div class="metric-card__label">准确率</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="5分钟">0</div>
-            <div class="metric-card__label">排查耗时</div>
-          </div>
-        </div>
+                  <div class="project-gallery-slot">
+                    <div class="project-gallery" data-project-gallery data-gallery-tab="pdc">
+                      <div class="project-gallery__frame">
+                        <button class="project-gallery__btn project-gallery__btn--prev" type="button" aria-label="上一张" disabled>‹</button>
+                        <div class="project-gallery__viewport">
+                          <div class="project-gallery__track">
+                            <div class="project-gallery__slide">
+                              <img src="assets/pdcagent/02.png" alt="PDC 自助查询助手展示 1" loading="lazy">
+                            </div>
+                            <div class="project-gallery__slide">
+                              <img src="assets/pdcagent/03.png" alt="PDC 自助查询助手展示 2" loading="lazy">
+                            </div>
+                            <div class="project-gallery__slide">
+                              <img src="assets/pdcagent/04.png" alt="PDC 自助查询助手展示 3" loading="lazy">
+                            </div>
+                            <div class="project-gallery__slide">
+                              <img src="assets/pdcagent/05.png" alt="PDC 自助查询助手展示 4" loading="lazy">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="project-gallery__btn project-gallery__btn--next" type="button" aria-label="下一张">›</button>
+                        <div class="project-gallery__dots" role="tablist" aria-label="项目图片切换">
+                          <button class="project-gallery__dot active" type="button" data-slide="0" aria-label="第 1 张" aria-selected="true"></button>
+                          <button class="project-gallery__dot" type="button" data-slide="1" aria-label="第 2 张" aria-selected="false"></button>
+                          <button class="project-gallery__dot" type="button" data-slide="2" aria-label="第 3 张" aria-selected="false"></button>
+                          <button class="project-gallery__dot" type="button" data-slide="3" aria-label="第 4 张" aria-selected="false"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="project-block__section" style="margin-top:32px">
-          <p class="project-block__label">个人贡献</p>
-          <div class="contribution-list">
-            <span class="badge">需求分析</span>
-            <span class="badge">Agent 设计</span>
-            <span class="badge">网页搭建</span>
-            <span class="badge">知识库建设</span>
-            <span class="badge">数据标注</span>
-            <span class="badge">Skill 开发</span>
-            <span class="badge">Prompt 调试</span>
-            <span class="badge">评测迭代</span>
+              <!-- 商家入驻助手 -->
+              <div class="project-tabs__panel" id="panel-merchant" role="tabpanel" data-tab-panel="merchant" hidden>
+                <h2 class="project-block__title">商家入驻助手 <span>项目 B</span></h2>
+                <div class="project-block__section">
+                  <p class="project-block__label">背景</p>
+                  <p class="project-block__text">C 端商家入驻旨在为中小商家提供从「入驻」到「门店管理」的轻量化线上经营工具。当前能力建设上，依赖商家根据自身诉求进行主动的入驻动作，但商家意愿和能力参差不齐。从「门店信息填写 → 入驻成功」流失严重。其中主要为 2 个核心流失原因：</p>
+                  <ol class="project-block__list">
+                    <li><strong>正向流程上：</strong>商家需理解门店新建、重复等概念，因不会操作、太复杂不想操作而直接流失。特别是在下沉市场，商家普遍没有自助操作意愿。而商家找客服/销售协助时，需提供的材料与实际填表单所需材料完全一致，但可顺利完成。</li>
+                    <li><strong>异常问题上：</strong>商家遇到阻塞/提醒项时流失概率高（如门店已被认领、门店重复等场景），这些复杂场景背后有多个原因、对应多个处理分支，需要商家理解后选择某个分支继续操作。而商服/产研有完整的查询和处理 SOP，进线后由人工判断商家问题，只要提供相应材料即可继续推进流程。</li>
+                  </ol>
+                </div>
+                <div class="project-block__section">
+                  <p class="project-block__label">方案</p>
+                  <p class="project-block__text">建立「入驻专家」Agent，通过对话收集入驻材料，替代商家完成材料的标准化提交。期望实现：</p>
+                  <ol class="project-block__list">
+                    <li>模拟 BD — 正向引导全流程的推进，包括解答入驻咨询，牵引入驻材料提交；</li>
+                    <li>模拟客服 — 解决入驻异常问题，Agent 自主通过工具调用，判断入驻材料问题并给出修改指示或直接辅助更改。</li>
+                  </ol>
+                  <p class="project-block__text">至此，商家不再需要了解业务概念（如新建门店、门店重复等的含义），无需感知驳回/阻塞（只要继续提供所需材料），可提升商家入驻体验和转化，降低操作耗时。</p>
+                </div>
+                <div class="project-block__section">
+                  <p class="project-block__label">成果 · AB 实验</p>
+                  <p class="project-block__text">二期灰度 5% 与一期 AB 实验，核心指标全面提升：</p>
+                </div>
+                <div class="project-block__metrics">
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="350%">0</div>
+                    <div class="metric-card__label">CTR 提升</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="42%">0</div>
+                    <div class="metric-card__label">互动率提升</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="48%">0</div>
+                    <div class="metric-card__label">转化率提升</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-card__value" data-count="9.5倍">0</div>
+                    <div class="metric-card__label">产出效率</div>
+                  </div>
+                </div>
+                <div class="project-block__section" style="margin-top:32px">
+                  <p class="project-block__label">个人贡献</p>
+                  <div class="contribution-list">
+                    <span class="badge">需求分析</span>
+                    <span class="badge">Agent 设计</span>
+                    <span class="badge">知识库建设</span>
+                    <span class="badge">流程编排</span>
+                    <span class="badge">AB 实验</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 其他需求 -->
+              <div class="project-tabs__panel" id="panel-other" role="tabpanel" data-tab-panel="other" hidden>
+                <h2 class="project-block__title">其他需求</h2>
+                <ul class="other-projects__list">
+                  <li>某品牌建店入口增加前置抽检，拦截虚假建店</li>
+                  <li>品牌新增自动挂接品店关系</li>
+                  <li>某品牌建店入口批量新增门店信息拦截反馈信息补充</li>
+                </ul>
+              </div>
+
+            </div>
           </div>
+
+          <div class="project-showcase" data-showcase-tab="pdc">
+            <div class="project-showcase__grid">
+              <figure class="project-showcase__card">
+                <img src="PDCagent/网页图.jpg" alt="PDC 网页界面展示" loading="lazy">
+              </figure>
+              <figure class="project-showcase__card">
+                <img src="PDCagent/AGENT.png" alt="Agent 配置后台展示" loading="lazy">
+              </figure>
+            </div>
+          </div>
+
         </div>
       </article>
-
-      <!-- 项目 B -->
-      <article class="project-block reveal">
-        <h2 class="project-block__title">商家入驻助手 <span>项目 B</span></h2>
-
-        <div class="project-block__section">
-          <p class="project-block__label">背景</p>
-          <p class="project-block__text">自入驻商家在门店信息填写到入驻成功过程中流失严重，正向流程自主操作意愿不强，异常问题是两大流失原因。</p>
-        </div>
-
-        <div class="project-block__section">
-          <p class="project-block__label">方案</p>
-          <p class="project-block__text">建设"入驻专家"Agent 二期优化。一方面通过对话收集入驻材料，替代商家完成标准化提交；另一方面帮助用户解决入驻异常，自主工具调用判断材料问题并给出修改指示或直接辅助更新。</p>
-        </div>
-
-        <div class="project-block__section">
-          <p class="project-block__label">成果 · AB 实验</p>
-          <p class="project-block__text">二期灰度 5% 与一期 AB 实验，核心指标全面提升：</p>
-        </div>
-
-        <div class="project-block__metrics">
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="350%">0</div>
-            <div class="metric-card__label">CTR 提升</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="42%">0</div>
-            <div class="metric-card__label">互动率提升</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="48%">0</div>
-            <div class="metric-card__label">转化率提升</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__value" data-count="9.5倍">0</div>
-            <div class="metric-card__label">产出效率</div>
-          </div>
-        </div>
-
-        <div class="project-block__section" style="margin-top:32px">
-          <p class="project-block__label">个人贡献</p>
-          <div class="contribution-list">
-            <span class="badge">需求分析</span>
-            <span class="badge">Agent 设计</span>
-            <span class="badge">知识库建设</span>
-            <span class="badge">流程编排</span>
-            <span class="badge">AB 实验</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- 其他需求 -->
-      <div class="other-projects reveal">
-        <h3 class="other-projects__title">其他需求</h3>
-        <ul>
-          <li>某品牌建店入口增加前置抽检，拦截虚假建店</li>
-          <li>品牌新增自动挂接品店关系</li>
-          <li>某品牌建店入口批量新增门店信息拦截反馈信息补充</li>
-        </ul>
-      </div>
 
     </div>
   </main>
